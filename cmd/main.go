@@ -2,7 +2,6 @@ package main
 
 import (
 	"context"
-	"log"
 
 	"github.com/vkunssec/golang-mongodb-logger/pkg/core"
 	"github.com/vkunssec/golang-mongodb-logger/pkg/database"
@@ -20,7 +19,7 @@ func main() {
 
 	res, err := coll.InsertOne(ctx, bson.M{"Alice": "123"})
 	if err != nil {
-		log.Fatalf("InsertOne failed: %v", err)
+		logger.Fatal().Msgf("InsertOne failed: %v", err)
 	}
 
 	logger.Info().
