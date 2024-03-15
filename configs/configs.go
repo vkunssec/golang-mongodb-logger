@@ -1,16 +1,18 @@
 package configs
 
 import (
-	"fmt"
 	"os"
 
 	"github.com/joho/godotenv"
+	"github.com/vkunssec/golang-mongodb-logger/pkg/core"
 )
 
 func Env(key string) string {
+	logger := core.Logger()
+
 	err := godotenv.Load(".env")
 	if err != nil {
-		fmt.Print(".env file not exists")
+		logger.Error().Msg(".env file not exists")
 	}
 	return os.Getenv(key)
 }
