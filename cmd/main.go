@@ -3,8 +3,9 @@ package main
 import (
 	"context"
 
-	"github.com/vkunssec/golang-mongodb-logger/pkg/core"
-	"github.com/vkunssec/golang-mongodb-logger/pkg/database"
+	"golang-mongodb-logger/pkg/core"
+	"golang-mongodb-logger/pkg/database"
+
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )

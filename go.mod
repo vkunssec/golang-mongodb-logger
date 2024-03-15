@@ -1,4 +1,4 @@
-module github.com/vkunssec/golang-mongodb-logger
+module golang-mongodb-logger
 
 go 1.22.0
 

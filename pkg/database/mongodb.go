@@ -3,10 +3,10 @@ package database
 import (
 	"context"
 
-	"github.com/go-logr/zerologr"
-	"github.com/vkunssec/golang-mongodb-logger/configs"
-	"github.com/vkunssec/golang-mongodb-logger/pkg/core"
+	"golang-mongodb-logger/configs"
+	"golang-mongodb-logger/pkg/core"
 
+	"github.com/go-logr/zerologr"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )

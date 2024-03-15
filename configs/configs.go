@@ -3,8 +3,9 @@ package configs
 import (
 	"os"
 
+	"golang-mongodb-logger/pkg/core"
+
 	"github.com/joho/godotenv"
-	"github.com/vkunssec/golang-mongodb-logger/pkg/core"
 )
 
 func Env(key string) string {
